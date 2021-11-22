@@ -4,7 +4,8 @@
     <Welcome></Welcome>
     <Meet></Meet>
     <Services></Services>
-    <!-- commenti di prova per commit -->
+    <Facilities></Facilities>
+    <Appointment></Appointment>
   </div>
 </template>
 
@@ -13,9 +14,11 @@ import Header from "@/components/Header.vue";
 import Welcome from "@/components/Welcome.vue";
 import Meet from "./components/Meet.vue";
 import Services from "./components/Services.vue";
+import Facilities from "./components/Facilities.vue";
+import Appointment from "./components/Appointment.vue";
 export default {
   name: "App",
-  components: { Header, Welcome, Meet, Services },
+  components: { Header, Welcome, Meet, Services, Facilities, Appointment },
 };
 </script>
 
