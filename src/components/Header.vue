@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container my-bg-header">
     <div class="top d-flex justify-content-between align-items-center">
       <div class="">Avada Health</div>
 
@@ -40,5 +40,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/header.scss";
+// @import "@/styles/header.scss";
+.my-bg-header {
+  background-image: url("../assets/images/header-image-homepage.jpg");
+}
 </style>
