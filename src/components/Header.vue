@@ -31,6 +31,11 @@
 <script>
 export default {
   name: "Header",
+  data() {
+    return {
+      background: require("@/assets/images/header-image-homepage.jpg"),
+    };
+  },
 };
 </script>
 
