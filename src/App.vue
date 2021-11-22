@@ -6,6 +6,7 @@
     <Services></Services>
     <Facilities></Facilities>
     <Appointment></Appointment>
+    <Slider></Slider>
   </div>
 </template>
 
@@ -16,9 +17,19 @@ import Meet from "./components/Meet.vue";
 import Services from "./components/Services.vue";
 import Facilities from "./components/Facilities.vue";
 import Appointment from "./components/Appointment.vue";
+import Slider from "./components/Slider.vue";
+
 export default {
   name: "App",
-  components: { Header, Welcome, Meet, Services, Facilities, Appointment },
+  components: {
+    Header,
+    Welcome,
+    Meet,
+    Services,
+    Facilities,
+    Appointment,
+    Slider,
+  },
 };
 </script>
 
