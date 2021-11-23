@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid p-5 bg-facilities">
+    <div class="container-fluid p-5 bg-facilities" style="padding: 150px 0">
       <div class="container">
         <div
           class="

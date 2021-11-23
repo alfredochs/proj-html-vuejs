@@ -1,31 +1,36 @@
 <template>
-  <div class="container">
-    <div class="">
-      <img src="../assets/images/icon-5.png" alt="" />
-      <span>Meet Our Doctors</span>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
-        esse animi? Unde cumque ad labore eaque? Exercitationem, nam? Laboriosam
-        perferendis, ipsa praesentium blanditiis alias nemo labore cupiditate
-        reiciendis fugit ullam!
-      </p>
+  <div class="bg-grey">
+    <div class="w-75 m-auto">
+      <div class="w-50 m-auto text-center">
+        <img src="../assets/images/icon-5.png" alt="" />
+        <h2>Meet Our Doctors</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+          esse animi? Unde cumque ad labore eaque? Exercitationem, nam?
+          Laboriosam perferendis, ipsa praesentium blanditiis alias nemo labore
+          cupiditate reiciendis fugit ullam!
+        </p>
+      </div>
 
-      <div class="d-flex justify-content-center">
-        <div class="d-flex flex-column" v-for="(doctor, i) in doctors" :key="i">
+      <div class="d-flex justify-content-around gap-3">
+        <div
+          class="d-flex flex-column bg-light w-50"
+          v-for="(doctor, i) in doctors"
+          :key="i"
+        >
           <img :src="doctor.img" alt="" />
-          <h4>{{ doctor.name }}</h4>
-          <span>{{ doctor.specialties }}</span>
-          <p>{{ doctor.description }}</p>
-
-          <div class="d-flex">
-            <a href="#">face</a>
-            <a href="#">twit</a>
-            <a href="#">inst</a>
+          <div class="p-5">
+            <h4>{{ doctor.name }}</h4>
+            <span class="pb-3">{{ doctor.specialties }}</span>
+            <p>{{ doctor.description }}</p>
+            <div class="d-flex">
+              <a href="#">face</a>
+              <a href="#">twit</a>
+              <a href="#">inst</a>
+            </div>
           </div>
         </div>
       </div>
-
-      <div></div>
     </div>
   </div>
 </template>
@@ -38,21 +43,24 @@ export default {
       doctors: [
         {
           img: require("../assets/images/doctor-1.jpg"),
-          name: "Jon Snow",
+          name: "JON SNOW",
           specialties: "Anesthesiologist",
-          description: "prova 1",
+          description:
+            "At bero eos at accusamus et iuusto odio digissimos ducimus qui bvlanditiis praesentium voluptatum deleniti atuqe",
         },
         {
           img: require("../assets/images/doctor-2.jpg"),
-          name: "Jon Snow",
-          specialties: "Anesthesiologist",
-          description: "prova 2",
+          name: "TONY STARK",
+          specialties: "Cardiologist",
+          description:
+            "At bero eos at accusamus et iuusto odio digissimos ducimus qui bvlanditiis praesentium voluptatum deleniti atuqe",
         },
         {
           img: require("../assets/images/doctor-3.jpg"),
-          name: "Jon Snow",
-          specialties: "Anesthesiologist",
-          description: "prova 3",
+          name: "ANNA SMITH",
+          specialties: "Nurse Practitioner",
+          description:
+            "At bero eos at accusamus et iuusto odio digissimos ducimus qui bvlanditiis praesentium voluptatum deleniti atuqe",
         },
       ],
     };

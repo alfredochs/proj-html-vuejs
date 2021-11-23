@@ -14,7 +14,7 @@
       <!-- nome e cognome -->
       <div class="row">
         <div class="mb-3 col-6">
-          <label for="exampleFormControlInput1" class="form-label">Nome</label>
+          <!-- <label for="exampleFormControlInput1" class="form-label">Nome</label> -->
           <input
             type="email"
             class="form-control"
@@ -24,9 +24,8 @@
         </div>
 
         <div class="mb-3 col-6">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Email address</label
-          >
+          <!-- <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label> -->
           <input
             type="email"
             class="form-control"
@@ -35,9 +34,9 @@
           />
         </div>
         <div class="mb-3 col-6">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Phone Number</label
-          >
+          <!-- <label for="exampleFormControlInput1" class="form-label"
+            >Phone Number</label -->
+
           <input
             type="email"
             class="form-control"
@@ -46,9 +45,9 @@
           />
         </div>
         <div class="mb-3 col-6">
-          <label for="exampleFormControlInput1" class="form-label"
+          <!-- <label for="exampleFormControlInput1" class="form-label"
             >Appointment Date</label
-          >
+          > -->
           <input
             type="email"
             class="form-control"
@@ -61,13 +60,14 @@
       <!-- fine nome e cognome -->
       <!-- text area -->
       <div class="">
-        <label for="exampleFormControlTextarea1" class="form-label"
+        <!-- <label for="exampleFormControlTextarea1" class="form-label"
           >Example textarea
-        </label>
+        </label> -->
         <textarea
           class="form-control"
           id="exampleFormControlTextarea1"
           rows="3"
+          placeholder="How can we help?"
         ></textarea>
         <!-- text area -->
         <button class="btn btn-primary w-100 mt-2">Make an Appointment</button>
@@ -87,6 +87,14 @@ export default {
   width: 50%;
   margin: auto;
   text-align: left;
+  input {
+    background-color: transparent;
+    border: 1px solid black;
+  }
+  textarea {
+    background-color: transparent;
+    border: 1px solid black;
+  }
 }
 .bg-appointment {
   background-image: url("../assets/images/make-an-appointment.jpg");

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-75 m-auto">
     <div class="container my-container" style="max-width: 35%">
       <h3>Welcome to Avada Health</h3>
       <p class="description-text">
@@ -9,15 +9,17 @@
       </p>
     </div>
 
-    <div class="d-flex justify-content-around w-75 m-auto">
+    <div class="d-flex justify-content-around m-auto text-center">
       <div
         class="d-flex flex-column justify-content-center align-items-center"
         v-for="(chiave, i) in welcomeIcons"
         :key="i"
       >
         <img :src="chiave.img" alt="" class="w-25" />
-        <span class="pb-2"> {{ chiave.title }}</span>
-        <span>{{ chiave.description }}</span>
+        <div class="">
+          <h6 class="pb-2">{{ chiave.title }}</h6>
+          <span class="description-text">{{ chiave.description }}</span>
+        </div>
       </div>
     </div>
   </div>

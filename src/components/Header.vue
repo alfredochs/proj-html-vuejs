@@ -21,7 +21,7 @@
           </ul>
         </div>
       </div>
-      <div class="center-container col-6">
+      <div class="center-container col-6" style="padding: 200px 0">
         <div class="w-75">
           <h2>Caring <span class="colored-text"> For Life </span></h2>
           <p class="description-text">
