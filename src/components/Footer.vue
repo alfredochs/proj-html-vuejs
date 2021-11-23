@@ -15,16 +15,7 @@
           tenetur nemo?
         </p>
         <span>Learn More About Us</span>
-        <div class="d-flex">
-          <a href="#"
-            ><i class="fa fa-facebook-official" aria-hidden="true"></i
-          ></a>
-          <a href="#"
-            ><i class="fa fa-twitter-square" aria-hidden="true"></i
-          ></a>
-          <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        </div>
+        <Social :icone="socialLogo"></Social>
       </div>
       <div class="col-4">
         <span>Contact Information</span>
@@ -60,7 +51,7 @@
             </div>
           </li>
         </ul>
-        <button class="btn btn-primary">View Our Departments</button>
+        <button class="btn btn-principal">View Our Departments</button>
       </div>
     </div>
     <div class="container-fluid bg-grey">
@@ -78,7 +69,9 @@
 </template>
 
 <script>
+import Social from "./Social.vue";
 export default {
+  components: { Social },
   name: "Footer",
   data() {
     return {
@@ -89,13 +82,31 @@ export default {
         "Pren-Natel Care",
         "Ultrasound Echocardiogram",
       ],
+      socialLogo: [
+        {
+          title: "fa-facebook-official",
+          // bg: "#425894",
+        },
+        {
+          title: `fa-twitter-square`,
+          // bg: "#6BAAE8",
+        },
+        {
+          title: `fa-youtube-play`,
+          // bg: "#BC342C",
+        },
+        {
+          title: `fa-instagram`,
+          // bg: "#4B7198",
+        },
+      ],
     };
   },
 };
 </script>
 
 <style lang="scss">
-@import "@/styles/variables.scss";
+@import "@/styles/footer.scss";
 .reparti-footer-container {
   width: 20px;
   height: 20px;

@@ -23,11 +23,6 @@
             <h4>{{ doctor.name }}</h4>
             <span class="pb-3">{{ doctor.specialties }}</span>
             <p>{{ doctor.description }}</p>
-            <div class="d-flex">
-              <a href="#">face</a>
-              <a href="#">twit</a>
-              <a href="#">inst</a>
-            </div>
           </div>
         </div>
       </div>
@@ -37,6 +32,7 @@
 
 <script>
 export default {
+  components: {},
   name: "Meet",
   data() {
     return {

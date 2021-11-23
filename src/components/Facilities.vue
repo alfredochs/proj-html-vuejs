@@ -30,16 +30,24 @@
       </div>
     </div>
 
-    <div class="d-flex row bg-danger text-center">
+    <div class="d-flex row text-center">
       <div
-        class="d-flex flex-column col-4 align-items-center my-bg"
+        class="
+          d-flex
+          flex-column
+          col-4
+          align-items-center
+          text-white
+          padding-cards
+        "
+        :class="card.bg"
         v-for="(card, i) in cards"
         :key="i"
       >
         <h5>{{ card.title }}</h5>
         <img :src="card.img" alt="" style="width: 50px" />
-        <p>{{ card.description }}</p>
-        <button class="btn">
+        <p class="small-text">{{ card.description }}</p>
+        <button class="btn text-white border border-radius-0">
           {{ card.btnText }}
         </button>
       </div>
@@ -57,16 +65,25 @@ export default {
           title: "Emergency Care",
           img: require("@/assets/images/wave-divider.png"),
           btnText: "Learn More 1",
+          bg: "primo-colore",
+          description:
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque",
         },
         {
           title: "Experts Diagnostics",
           img: require("@/assets/images/wave-divider.png"),
           btnText: "Learn More 2",
+          bg: "secondo-colore",
+          description:
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque",
         },
         {
           title: "Super Rehabilitation",
           img: require("@/assets/images/wave-divider.png"),
           btnText: "Learn More 3",
+          bg: "terzo-colore",
+          description:
+            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque",
         },
       ],
     };
@@ -75,7 +92,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/variables.scss";
+@import "@/styles/facilities.scss";
 
 .bg-facilities {
   background-image: url("../assets/images/paralax-bg-tour-facilities.jpg");

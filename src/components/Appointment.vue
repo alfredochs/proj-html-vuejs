@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-appointment text-white general-padding">
+  <div class="bg-appointment text-white padding-general">
     <div class="appointment-container text-center">
       <h2>Make an Appointment</h2>
       <p>
@@ -85,7 +85,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/variables.scss";
+@import "@/styles/appointment.scss";
 
 .appointment-container {
   width: 50%;
