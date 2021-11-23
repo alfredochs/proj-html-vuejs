@@ -40,7 +40,4 @@ export default {
 @import "~bootstrap/scss/bootstrap";
 @import "@/styles/allStyles.scss";
 @import "~font-awesome/css/font-awesome.min.css";
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 </style>

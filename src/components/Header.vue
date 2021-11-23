@@ -1,8 +1,8 @@
 <template>
-  <div class="container-fluid my-bg-header text-white h-100">
+  <div class="container-fluid my-bg-header text-white">
     <div class="container p-3">
       <div class="top d-flex justify-content-between align-items-center">
-        <div class="">
+        <div>
           <img
             src="../assets/images/medical_logo_1x_light.png"
             class="w-75"
@@ -11,24 +11,34 @@
         </div>
 
         <div>
-          <ul class="d-flex list-unstyled align-items-center description-text">
+          <ul
+            class="
+              d-flex
+              list-unstyled
+              align-items-center
+              description-text
+              small-text
+            "
+          >
             <li v-for="link in links" :key="link" class="pe-3">
               {{ link }}
             </li>
             <li>
-              <button class="btn btn-principal">Make Appointment</button>
+              <button class="btn btn-principal small-text">
+                Make Appointment
+              </button>
             </li>
           </ul>
         </div>
       </div>
-      <div class="center-container col-6" style="padding: 200px 0">
+      <div class="m-auto col-6 padding-to-bg-img">
         <div class="w-75">
-          <h2>Caring <span class="colored-text"> For Life </span></h2>
-          <p class="description-text">
+          <h1>Caring <span class="colored-text"> For Life </span></h1>
+          <p class="small-text">
             Kind words can be short and easy to speak, but their echoes are
             truly endless. Avada Health fovuses on you as if was our own family.
           </p>
-          <button class="btn btn-principal">Learn More</button>
+          <button class="btn btn-principal small-text">Learn More</button>
         </div>
       </div>
     </div>
@@ -47,19 +57,9 @@ export default {
 </script>
 
 <style lang="scss">
-// @import "@/styles/header.scss";
+@import "@/styles/header.scss";
 .my-bg-header {
   background-image: url("../assets/images/header-image-homepage.jpg");
   background-size: cover;
-  .colored-text {
-    color: #39afbb;
-  }
-  .btn-principal {
-    background-color: #3aafbf;
-    color: white;
-  }
-  .description-text {
-    font-size: 14px;
-  }
 }
 </style>

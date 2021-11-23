@@ -1,5 +1,11 @@
 $bg-grey: #f1efef;
+$principal-color: #3aafbf;
+$small-text-size: 13px;
+$xs-text-size: 10px;
+$big-padding: 120px 0 250px 0; 
+$general-padding: 70px 0;
+$internal-padding: 20px;
 
-.bg-grey{
-    background-color: #f1efef;
+.bg-color{
+    background-color: $bg-grey;
 }

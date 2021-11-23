@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container m-auto row">
+    <div class="container m-auto row general-padding">
       <div class="col-4 d-flex flex-column">
         <img
           src="../assets/images/medical_logo_2x_dark.png"
@@ -63,7 +63,7 @@
         <button class="btn btn-primary">View Our Departments</button>
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid bg-grey">
       <div class="container d-flex justify-content-between">
         <div>
           Copyright 2021-2020 | Avada Theme by Theme Fusion | All Rights
@@ -89,29 +89,13 @@ export default {
         "Pren-Natel Care",
         "Ultrasound Echocardiogram",
       ],
-      // [
-      //   {
-      //     tipo: "Cardiology",
-      //   },
-      //   {
-      //     tipo: "Pediatrics",
-      //   },
-      //   {
-      //     tipo: "Diabetes Care",
-      //   },
-      //   {
-      //     tipo: "Pren-Natel Care",
-      //   },
-      //   {
-      //     tipo: "Ultrasound Echocardiogram",
-      //   },
-      // ],
     };
   },
 };
 </script>
 
 <style lang="scss">
+@import "@/styles/variables.scss";
 .reparti-footer-container {
   width: 20px;
   height: 20px;
@@ -127,7 +111,7 @@ export default {
   width: 40px;
   border-top-left-radius: 20%;
   border-top-right-radius: 20%;
-  background-color: black;
+  background-color: #3d4954;
   color: white;
   display: flex;
   justify-content: center;

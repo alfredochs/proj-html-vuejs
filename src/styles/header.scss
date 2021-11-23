@@ -1,5 +1,23 @@
-.center-container{
-    width: 50%;
-    margin: auto;
-    padding: 60px 0;
+@import "@/styles/variables.scss";
+
+.small-text{
+  font-size: $small-text-size;
 }
+.padding-to-bg-img{
+  padding: $big-padding;
+}
+
+.btn-principal {
+    background-color: $principal-color;
+    color: white;
+  }
+.description-text {
+font-size: $small-text-size;
+  }
+.colored-text {
+    color: $principal-color;
+}
+// .my-bg-header {
+//   background-image: url("@/assets/images/header-image-homepage.jpg");
+//   background-size: cover;
+// }

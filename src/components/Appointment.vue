@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-appointment text-white">
+  <div class="bg-appointment text-white general-padding">
     <div class="appointment-container text-center">
       <h2>Make an Appointment</h2>
       <p>
@@ -70,7 +70,9 @@
           placeholder="How can we help?"
         ></textarea>
         <!-- text area -->
-        <button class="btn btn-primary w-100 mt-2">Make an Appointment</button>
+        <button class="btn btn-principal w-100 mt-2">
+          Make an Appointment
+        </button>
       </div>
     </div>
   </div>
@@ -83,6 +85,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/styles/variables.scss";
+
 .appointment-container {
   width: 50%;
   margin: auto;
@@ -99,5 +103,6 @@ export default {
 .bg-appointment {
   background-image: url("../assets/images/make-an-appointment.jpg");
   background-size: cover;
+  background-position: center;
 }
 </style>

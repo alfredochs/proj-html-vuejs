@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid p-5 bg-facilities" style="padding: 150px 0">
+    <div class="container-fluid bg-facilities" style="padding: 150px 0">
       <div class="container">
         <div
           class="
@@ -75,8 +75,11 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/styles/variables.scss";
+
 .bg-facilities {
   background-image: url("../assets/images/paralax-bg-tour-facilities.jpg");
   background-size: cover;
+  background-position: center;
 }
 </style>

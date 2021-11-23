@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-grey">
+  <div class="bg-color general-padding">
     <div class="w-75 m-auto">
       <div class="w-50 m-auto text-center">
         <img src="../assets/images/icon-5.png" alt="" />
-        <h2>Meet Our Doctors</h2>
+        <h2>MEET OUR DOCTORS</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
           esse animi? Unde cumque ad labore eaque? Exercitationem, nam?
@@ -12,9 +12,9 @@
         </p>
       </div>
 
-      <div class="d-flex justify-content-around gap-3">
+      <div class="d-flex justify-content-center gap-3">
         <div
-          class="d-flex flex-column bg-light w-50"
+          class="d-flex flex-column bg-light w-25"
           v-for="(doctor, i) in doctors"
           :key="i"
         >
@@ -68,5 +68,6 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "@/styles/variables.scss";
 </style>

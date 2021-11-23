@@ -1,32 +1,21 @@
 <template>
-  <div class="w-75 m-auto">
-    <div class="container my-container" style="max-width: 35%">
-      <h3>Welcome to Avada Health</h3>
-      <p class="description-text">
+  <div class="w-75 m-auto padding-general">
+    <div class="container my-container">
+      <h3 class="fw-light">Welcome to Avada Health</h3>
+      <p class="small-text">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantoum doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
         illo.
       </p>
     </div>
-
-    <div class="d-flex justify-content-around m-auto text-center">
-      <div
-        class="d-flex flex-column justify-content-center align-items-center"
-        v-for="(chiave, i) in welcomeIcons"
-        :key="i"
-      >
-        <img :src="chiave.img" alt="" class="w-25" />
-        <div class="">
-          <h6 class="pb-2">{{ chiave.title }}</h6>
-          <span class="description-text">{{ chiave.description }}</span>
-        </div>
-      </div>
-    </div>
+    <Icons :icons="welcomeIcons"></Icons>
   </div>
 </template>
 
 <script>
+import Icons from "./Icons.vue";
 export default {
+  components: { Icons },
   name: "Welcome",
   data() {
     return {
@@ -62,12 +51,5 @@ export default {
 </script>
 
 <style lang="scss">
-.my-container {
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-.description-text {
-  font-size: 14px;
-}
+@import "@/styles/welcome.scss";
 </style>

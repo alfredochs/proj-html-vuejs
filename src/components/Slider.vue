@@ -34,7 +34,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import "@/styles/variables.scss";
+
 .bg-slider {
   background: rgb(52, 111, 171);
   background: linear-gradient(
