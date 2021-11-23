@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid bg-dark d-flex justify-content-center">
+  <div class="container-fluid bg-slider d-flex justify-content-center">
     <div v-for="(logo, i) in logos" :key="i">
       <img :src="logo.img" alt="" />
     </div>
@@ -35,4 +35,12 @@ export default {
 </script>
 
 <style>
+.bg-slider {
+  background: rgb(52, 111, 171);
+  background: linear-gradient(
+    90deg,
+    rgba(52, 111, 171, 1) 0%,
+    rgba(81, 181, 185, 1) 52%
+  );
+}
 </style>

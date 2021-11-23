@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-appointment text-white">
     <div class="appointment-container text-center">
       <h2>Make an Appointment</h2>
       <p>
@@ -60,7 +60,7 @@
 
       <!-- fine nome e cognome -->
       <!-- text area -->
-      <div class="mb-3">
+      <div class="">
         <label for="exampleFormControlTextarea1" class="form-label"
           >Example textarea
         </label>
@@ -87,5 +87,9 @@ export default {
   width: 50%;
   margin: auto;
   text-align: left;
+}
+.bg-appointment {
+  background-image: url("../assets/images/make-an-appointment.jpg");
+  background-size: cover;
 }
 </style>

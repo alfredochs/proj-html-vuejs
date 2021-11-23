@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container-fluid bg-danger p-5">
+    <div class="container-fluid p-5 bg-facilities">
       <div class="container">
         <div
           class="
@@ -10,7 +10,7 @@
             text-center
             w-50
             m-auto
-            bg-danger
+            text-white
           "
         >
           <img src="../assets/images/icon-7.png" alt="" style="width: 40px" />
@@ -75,9 +75,8 @@ export default {
 </script>
 
 <style lang="scss">
-.my-bg {
-  background-color: lightblue;
-
-  //   border: 1px solid;
+.bg-facilities {
+  background-image: url("../assets/images/paralax-bg-tour-facilities.jpg");
+  background-size: cover;
 }
 </style>

@@ -7,6 +7,7 @@
     <Facilities></Facilities>
     <Appointment></Appointment>
     <Slider></Slider>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Services from "./components/Services.vue";
 import Facilities from "./components/Facilities.vue";
 import Appointment from "./components/Appointment.vue";
 import Slider from "./components/Slider.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
@@ -29,6 +31,7 @@ export default {
     Facilities,
     Appointment,
     Slider,
+    Footer,
   },
 };
 </script>
@@ -36,4 +39,8 @@ export default {
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap";
 @import "@/styles/allStyles.scss";
+@import "~font-awesome/css/font-awesome.min.css";
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 </style>
