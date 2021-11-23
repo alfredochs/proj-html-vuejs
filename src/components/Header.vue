@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/header.scss";
+@import "../styles/header.scss";
 .my-bg-header {
   background-image: url("../assets/images/header-image-homepage.jpg");
   background-size: cover;

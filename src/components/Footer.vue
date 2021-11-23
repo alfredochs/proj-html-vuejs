@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container m-auto row general-padding">
+    <div class="container m-auto row padding-general">
       <div class="col-4 d-flex flex-column">
         <img
           src="../assets/images/medical_logo_2x_dark.png"
@@ -84,20 +84,20 @@ export default {
       ],
       socialLogo: [
         {
-          title: "fa-facebook-official",
-          // bg: "#425894",
+          title: "fa-facebook",
+          bg: "face-bg",
         },
         {
           title: `fa-twitter-square`,
-          // bg: "#6BAAE8",
+          bg: "twitter-bg",
         },
         {
           title: `fa-youtube-play`,
-          // bg: "#BC342C",
+          bg: "youtube-bg",
         },
         {
           title: `fa-instagram`,
-          // bg: "#4B7198",
+          bg: "instagram-bg",
         },
       ],
     };
