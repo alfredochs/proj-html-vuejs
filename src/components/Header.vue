@@ -20,11 +20,11 @@
               small-text
             "
           >
-            <li v-for="link in links" :key="link" class="pe-3">
+            <li v-for="link in links" :key="link" class="pe-3 text-uppercase">
               {{ link }}
             </li>
             <li>
-              <button class="btn btn-principal small-text">
+              <button class="btn btn-principal small-text text-uppercase">
                 Make Appointment
               </button>
             </li>
@@ -40,7 +40,9 @@
             Kind words can be short and easy to speak, but their echoes are
             truly endless. Avada Health fovuses on you as if was our own family.
           </p>
-          <button class="btn btn-principal small-text">Learn More</button>
+          <button class="btn btn-principal small-text text-uppercase">
+            Learn More
+          </button>
         </div>
       </div>
     </div>

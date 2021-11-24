@@ -3,7 +3,7 @@
     <div
       v-for="(icon, i) in icone"
       :key="i"
-      class="container-logo text-white p-2"
+      class="container-logo text-white"
       :class="icon.bg"
     >
       <i aria-hidden="true" class="fa" :class="icon.title"></i>

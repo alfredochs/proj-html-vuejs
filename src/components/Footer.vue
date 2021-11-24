@@ -8,17 +8,20 @@
           alt=""
           style=""
         />
-        <p>
+        <p class="pt-3">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere rerum
           atque tempora rem, illum corrupti quo obcaecati quidem quae est
           debitis doloribus laborum enim quasi aliquam exercitationem, ullam
           tenetur nemo?
         </p>
-        <span>Learn More About Us</span>
+        <div class="full-border-top">
+          <span class="fw-normal">Learn More About Us</span>
+        </div>
+
         <Social :icone="socialLogo"></Social>
       </div>
       <div class="col-4">
-        <span>Contact Information</span>
+        <h6 class="text-uppercase">Contact Information</h6>
         <div class="small-border-bottom"></div>
         <ul class="list-unstyled">
           <li class="d-flex gap-1">
@@ -41,7 +44,7 @@
         </ul>
       </div>
       <div class="col-4">
-        <h6>Medical Departments</h6>
+        <h6 class="text-uppercase">Medical Departments</h6>
         <div class="small-border-bottom"></div>
         <ul class="d-flex flex-column list-unstyled">
           <li v-for="reparto in reparti" :key="reparto" class="small-text p-1">
@@ -57,7 +60,16 @@
             </div>
           </li>
         </ul>
-        <button class="btn fw-light border border-radius-0">
+        <button
+          class="
+            btn
+            fw-light
+            border
+            rounded-0
+            button-facilities-card
+            text-uppercase
+          "
+        >
           View Our Departments
         </button>
       </div>

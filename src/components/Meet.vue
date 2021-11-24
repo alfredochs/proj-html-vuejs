@@ -3,13 +3,12 @@
     <div class="w-75 m-auto">
       <div class="m-auto text-center my-container">
         <img src="../assets/images/icon-5.png" alt="" />
-        <h2 class="fw-lighter">MEET OUR DOCTORS</h2>
+        <h2 class="fw-lighter text-uppercase">Meet our Doctors</h2>
         <div class="big-border-bottom w-50"></div>
         <p class="small-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
-          esse animi? Unde cumque ad labore eaque? Exercitationem, nam?
-          Laboriosam perferendis, ipsa praesentium blanditiis alias nemo labore
-          cupiditate reiciendis fugit ullam!
+          Sed ut perpiciatis unde onmis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+          ab illo inventore varitatis et quasi architecto beatae
         </p>
       </div>
 
@@ -21,9 +20,10 @@
         >
           <img :src="doctor.img" alt="" />
           <div class="p-3">
-            <span class="doctor-name">{{ doctor.name }}</span> <br />
+            <span class="doctor-name text-uppercase">{{ doctor.name }}</span>
+            <br />
             <span class="pb-3 doctor-name">{{ doctor.specialties }}</span>
-            <p class="small-text">{{ doctor.description }}</p>
+            <p class="card-text py-3">{{ doctor.description }}</p>
             <Social :icone="socialLogo"></Social>
           </div>
         </div>

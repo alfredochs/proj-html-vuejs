@@ -11,13 +11,14 @@
         justify-content-center
         align-items-center
         intenal-padding
+        small-text
       "
       :class="icons.length > 4 ? 'col-4' : ''"
       v-for="(icon, i) in icons"
       :key="i"
     >
       <img :src="icon.img" alt="" style="width: 50px" />
-      <h6 class="pb-2 fw-lighter">{{ icon.title }}</h6>
+      <h6 class="pb-2 fw-lighter pt-2 text-uppercase">{{ icon.title }}</h6>
       <p class="xs-text fw-lighter lh-lg" style="font-size: 12px">
         {{ icon.description }}
       </p>
@@ -31,6 +32,11 @@ export default {
   props: {
     icons: Array,
   },
+  // methods: {
+  //   maiuscole() {
+  //     this.$emit("changeCase", this.icons.title);
+  //   },
+  // },
 };
 </script>
 

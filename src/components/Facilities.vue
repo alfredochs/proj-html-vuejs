@@ -14,7 +14,7 @@
           "
         >
           <img src="../assets/images/icon-7.png" alt="" style="width: 40px" />
-          <h2 class="fw-lighter">TO OUR FACILITIES</h2>
+          <h2 class="fw-lighter text-uppercase">TO OUR FACILITIES</h2>
           <div class="big-border-bottom w-50"></div>
 
           <p class="small-text lh-lg">
@@ -46,10 +46,21 @@
         v-for="(card, i) in cards"
         :key="i"
       >
-        <h5 class="fw-lighter">{{ card.title }}</h5>
+        <h5 class="fw-light small-text">{{ card.title }}</h5>
         <img :src="card.img" alt="" style="width: 50px" />
-        <p class="small-text">{{ card.description }}</p>
-        <button class="btn text-white border border-radius-0">
+        <p class="fw-lighter p-2" style="font-size: 10px">
+          {{ card.description }}
+        </p>
+        <button
+          class="
+            btn
+            text-white
+            border
+            rounded-0
+            text-uppercase
+            button-facilities-card
+          "
+        >
           {{ card.btnText }}
         </button>
       </div>

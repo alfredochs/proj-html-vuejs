@@ -1,7 +1,7 @@
 <template>
   <div class="w-75 m-auto padding-general">
     <div class="container my-container">
-      <h3 class="fw-light">Welcome to Avada Health</h3>
+      <h3 class="fw-lighter">Welcome to Avada Health</h3>
       <p class="small-text">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem
         accusantoum doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
@@ -46,6 +46,12 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    maiuscole() {
+      const titolo = this.welcomeIcons.title;
+      console.log(titolo);
+    },
   },
 };
 </script>
