@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container m-auto row padding-general">
-      <div class="col-4 d-flex flex-column">
+      <div class="col-4 d-flex flex-column small-text">
         <img
           src="../assets/images/medical_logo_2x_dark.png"
           class="w-50"
@@ -19,6 +19,7 @@
       </div>
       <div class="col-4">
         <span>Contact Information</span>
+        <div class="small-border-bottom"></div>
         <ul class="list-unstyled">
           <li class="d-flex gap-1">
             <i
@@ -27,18 +28,23 @@
               style="color: #39abbb"
             ></i>
 
-            <h6>Indirizzo</h6>
+            <h6 class="small-text">121 King Street, London United Kingdom</h6>
           </li>
           <li class="d-flex gap-1">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <h6>Telefono</h6>
+            <i
+              class="fa fa-phone"
+              aria-hidden="true"
+              style="color: #39abbb"
+            ></i>
+            <h6 class="small-text">1.800.458.556</h6>
           </li>
         </ul>
       </div>
       <div class="col-4">
         <h6>Medical Departments</h6>
+        <div class="small-border-bottom"></div>
         <ul class="d-flex flex-column list-unstyled">
-          <li v-for="reparto in reparti" :key="reparto">
+          <li v-for="reparto in reparti" :key="reparto" class="small-text p-1">
             <div class="d-flex gap-2">
               <div class="reparti-footer-container p-2">
                 <i
@@ -51,12 +57,22 @@
             </div>
           </li>
         </ul>
-        <button class="btn btn-principal">View Our Departments</button>
+        <button class="btn fw-light border border-radius-0">
+          View Our Departments
+        </button>
       </div>
     </div>
-    <div class="container-fluid bg-grey">
-      <div class="container d-flex justify-content-between">
-        <div>
+    <div class="container-fluid bg-color-grey">
+      <div
+        class="
+          container
+          d-flex
+          justify-content-between
+          align-items-center
+          copyright-container
+        "
+      >
+        <div class="small-text">
           Copyright 2021-2020 | Avada Theme by Theme Fusion | All Rights
           Reserved | Powered by WordPress
         </div>
@@ -88,7 +104,7 @@ export default {
           bg: "face-bg",
         },
         {
-          title: `fa-twitter-square`,
+          title: `fa-twitter`,
           bg: "twitter-bg",
         },
         {
@@ -107,25 +123,4 @@ export default {
 
 <style lang="scss">
 @import "@/styles/footer.scss";
-.reparti-footer-container {
-  width: 20px;
-  height: 20px;
-  background-color: #39abbb;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.arrow-container {
-  height: 30px;
-  width: 40px;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
-  background-color: #3d4954;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 </style>

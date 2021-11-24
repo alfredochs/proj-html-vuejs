@@ -8,14 +8,16 @@
             flex-column
             align-items-center
             text-center
-            w-50
+            my-container
             m-auto
             text-white
           "
         >
           <img src="../assets/images/icon-7.png" alt="" style="width: 40px" />
-          <h4>To our Facilities</h4>
-          <p>
+          <h2 class="fw-lighter">TO OUR FACILITIES</h2>
+          <div class="big-border-bottom w-50"></div>
+
+          <p class="small-text lh-lg">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
             consectetur, expedita quisquam ut, id nam numquam eveniet sunt vel
             minus harum voluptas fugiat est dicta eos ipsum cupiditate sint
@@ -44,7 +46,7 @@
         v-for="(card, i) in cards"
         :key="i"
       >
-        <h5>{{ card.title }}</h5>
+        <h5 class="fw-lighter">{{ card.title }}</h5>
         <img :src="card.img" alt="" style="width: 50px" />
         <p class="small-text">{{ card.description }}</p>
         <button class="btn text-white border border-radius-0">

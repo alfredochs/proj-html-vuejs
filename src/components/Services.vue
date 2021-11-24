@@ -1,9 +1,11 @@
 <template>
   <div class="container padding-general">
-    <div class="w-50 m-auto text-center">
+    <div class="my-container m-auto text-center">
       <img src="../assets/images/icon-6.png" alt="" />
-      <h3>Our Health Services</h3>
-      <p>
+      <h2 class="fw-lighter">OUR HEALTH SERVICES</h2>
+      <div class="big-border-bottom"></div>
+
+      <p class="small-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt hic
         recusandae qui praesentium enim, iste pariatur dolore id? Id quos in
         ipsam porro fuga rem tenetur quibusdam voluptatem sint consequuntur.

@@ -1,8 +1,10 @@
 <template>
   <div class="bg-appointment text-white padding-general">
-    <div class="appointment-container text-center">
-      <h2>Make an Appointment</h2>
-      <p>
+    <div class="appointment-container text-center my-container">
+      <h3 class="fw-lighter">Make an Appointment</h3>
+      <div class="big-border-bottom"></div>
+
+      <p class="small-text lh-lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
         error non nisi incidunt provident ipsam doloremque cupiditate sunt
         beatae accusamus dolore eaque, officia pariatur quia impedit id
@@ -70,7 +72,7 @@
           placeholder="How can we help?"
         ></textarea>
         <!-- text area -->
-        <button class="btn btn-principal w-100 mt-2">
+        <button class="btn btn-principal w-100 mt-4">
           Make an Appointment
         </button>
       </div>

@@ -1,1 +1,13 @@
 @import "@/styles/variables.scss";
+
+.bg-color-grey{
+    background-color: $bg-grey;
+}
+.big-border-bottom{
+    border-bottom: 1px solid;
+    width: 40%;
+    margin: 20px auto;
+}
+.doctor-name{
+    font-size: 12px;
+}

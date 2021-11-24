@@ -31,9 +31,11 @@
           </ul>
         </div>
       </div>
-      <div class="m-auto col-6 padding-to-bg-img">
+      <div class="m-auto col-7 padding-to-bg-img">
         <div class="w-75">
-          <h1>Caring <span class="colored-text"> For Life </span></h1>
+          <h1 class="fw-light">
+            Caring <span class="colored-text"> For Life </span>
+          </h1>
           <p class="small-text">
             Kind words can be short and easy to speak, but their echoes are
             truly endless. Avada Health fovuses on you as if was our own family.
@@ -57,9 +59,9 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/header.scss";
-.my-bg-header {
-  background-image: url("../assets/images/header-image-homepage.jpg");
-  background-size: cover;
-}
+// @import "../styles/header.scss";
+// .my-bg-header {
+//   background-image: url("../assets/images/header-image-homepage.jpg");
+//   background-size: cover;
+// }
 </style>

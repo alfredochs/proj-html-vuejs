@@ -19,3 +19,44 @@ background-color: #425894;
 .instagram-bg{
     background-color: #4B7198;
 }
+
+.copyright-container{
+    height: 50px;
+    position: relative;
+}
+
+.reparti-footer-container {
+    width: 20px;
+    height: 20px;
+    background-color: #39abbb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow-container {
+    height: 30px;
+    width: 40px;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    background-color: #3d4954;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+// .btn-bianco{
+//     border: 1px solid black;
+//     background-color: red;
+// }
+
+.small-border-bottom{
+    border-bottom: 1px solid;
+    width: 10%;
+    color: $principal-color;
+    margin: 20px 0;
+}

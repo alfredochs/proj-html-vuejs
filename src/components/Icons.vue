@@ -18,7 +18,9 @@
     >
       <img :src="icon.img" alt="" style="width: 50px" />
       <h6 class="pb-2 fw-lighter">{{ icon.title }}</h6>
-      <span class="xs-text fw-lighter">{{ icon.description }}</span>
+      <p class="xs-text fw-lighter lh-lg" style="font-size: 12px">
+        {{ icon.description }}
+      </p>
     </div>
   </div>
 </template>

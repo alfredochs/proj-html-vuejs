@@ -2,6 +2,7 @@
 
 .small-text{
   font-size: $small-text-size;
+  font-weight: lighter;
 }
 .padding-to-bg-img{
   padding: $big-padding;
@@ -17,7 +18,11 @@
 .colored-text {
     color: $principal-color;
 }
-// .my-bg-header {
-//   background-image: url("../assets/images/header-image-homepage.jpg");
-//   background-size: cover;
-// }
+.my-bg-header {
+  background-image: url("./assets/images/header-image-homepage.jpg");
+  background-size: cover;
+}
+
+ul li:hover{
+  color:$principal-color
+}

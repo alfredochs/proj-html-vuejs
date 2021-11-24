@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid bg-slider d-flex justify-content-center">
     <div v-for="(logo, i) in logos" :key="i">
-      <img :src="logo.img" alt="" />
+      <img :src="logo.img" alt="" class="w-75" />
     </div>
   </div>
 </template>
