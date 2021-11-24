@@ -1,6 +1,6 @@
 <template>
   <div class="w-75 m-auto padding-general">
-    <div class="container my-container">
+    <div class="container w-50 text-center lh-lg">
       <h3 class="fw-lighter">Welcome to Avada Health</h3>
       <p class="small-text">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem

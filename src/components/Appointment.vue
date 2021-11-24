@@ -72,7 +72,7 @@
           placeholder="How can we help?"
         ></textarea>
         <!-- text area -->
-        <button class="btn btn-principal w-100 mt-4">
+        <button class="btn btn-principal w-100 mt-4 text-uppercase">
           Make an Appointment
         </button>
       </div>

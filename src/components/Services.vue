@@ -1,5 +1,5 @@
 <template>
-  <div class="container padding-general w-75">
+  <div class="container padding-general">
     <div class="my-container m-auto text-center">
       <img src="../assets/images/icon-6.png" alt="" />
       <h2 class="fw-lighter">OUR HEALTH SERVICES</h2>

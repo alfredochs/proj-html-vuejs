@@ -5,7 +5,7 @@
         <img src="../assets/images/icon-5.png" alt="" />
         <h2 class="fw-lighter text-uppercase">Meet our Doctors</h2>
         <div class="big-border-bottom w-50"></div>
-        <p class="small-text">
+        <p class="small-text lh-lg">
           Sed ut perpiciatis unde onmis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
           ab illo inventore varitatis et quasi architecto beatae
